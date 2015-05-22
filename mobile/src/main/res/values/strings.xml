@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WearPlayground</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_response">ResponseActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_notification_wear">NotificationWearActivity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+</resources>

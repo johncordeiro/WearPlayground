@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNodeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nós conectados: "/>
+
+    <TextView
+        android:id="@+id/tvNodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvNodeTitle"
+        tools:text="312312132312"/>
+
+    <TextView
+        android:id="@+id/tvLastMessageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvNodeTitle"
+        android:text="Última mensagem: "/>
+
+    <TextView
+        android:id="@+id/tvLastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tvLastMessageTitle"
+        android:layout_below="@+id/tvNodeTitle"
+        tools:text="312312132312"/>
+
+    <TextView
+        android:id="@+id/tvSharedDataTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvLastMessageTitle"
+        android:text="Dados compartilhados: "/>
+
+    <TextView
+        android:id="@+id/tvSharedData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tvSharedDataTitle"
+        android:layout_below="@+id/tvLastMessage"
+        tools:text="312312132312"/>
+
+    <Button
+        android:id="@+id/btSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSharedDataTitle"
+        android:layout_marginTop="10dp"
+        android:text="Enviar Mensagem"/>
+
+    <Button
+        android:id="@+id/btSaveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSendMessage"
+        android:text="Salvar Dados"/>
+
+    <Button
+        android:id="@+id/btSendNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSaveData"
+        android:text="Enviar Notificação" />
+
+    <Button
+        android:id="@+id/btSendActionNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSendNotification"
+        android:text="Enviar Notificação com ações" />
+
+    <Button
+        android:id="@+id/btSendResponseNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSendActionNotification"
+        android:text="Enviar notificação e receber resposta" />
+
+</RelativeLayout>

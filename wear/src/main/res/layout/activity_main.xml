@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watch_view_stub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.ilhasoft.wearplayground.MainActivity"
+    tools:deviceIds="wear">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_box="all"
+        android:padding="5dp"
+        tools:context="br.com.ilhasoft.wearplayground.MainActivity"
+        tools:deviceIds="wear_square">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNodeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nós conectados: "/>
+
+            <TextView
+                android:id="@+id/tvNodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="312312132312"/>
+
+            <TextView
+                android:id="@+id/tvLastMessageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Última mensagem: "/>
+
+            <TextView
+                android:id="@+id/tvLastMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="312312132312"/>
+
+            <TextView
+                android:id="@+id/tvSharedDataTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Dados compartilhados: "/>
+
+            <TextView
+                android:id="@+id/tvSharedData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="312312132312"/>
+
+            <Button
+                android:id="@+id/btSendMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar Mensagem"/>
+
+            <Button
+                android:id="@+id/btSaveData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar Dados"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.wearable.view.BoxInsetLayout>
